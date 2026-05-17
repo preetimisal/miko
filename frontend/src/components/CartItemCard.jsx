@@ -33,7 +33,7 @@ function CartItemCard({data}) {
         <button className='p-2 cursor-pointer bg-gray-100 rounded-full hover:bg-gray-200'  onClick={()=>handleIncrease(data.id,data.quantity)}>
         <FaPlus size={12}/>
         </button>
-        <button className="p-2 bg-red-100 text-red-600 rounded-full hover:bg-red-200"
+        <button className="p-2 bg-red-100 text-red-900 rounded-full hover:bg-red-700"
  onClick={()=>dispatch(removeCartItem(data.id))}>
 <CiTrash size={18}/>
         </button>

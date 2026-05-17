@@ -41,9 +41,9 @@ const newQty=quantity-1
 }
 
   return (
-    <div className='w-[250px] rounded-2xl border-2 border-[#ff4d2d] bg-white shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col'>
+    <div className='w-[250px] rounded-2xl border-2 border-[#722F37] bg-white shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col'>
       <div className='relative w-full h-[170px] flex justify-center items-center bg-white'>
-        <div className='absolute top-3 right-3 bg-white rounded-full p-1 shadow'>{data.foodType=="veg"?<FaLeaf className='text-green-600 text-lg'/>:<FaDrumstickBite className='text-red-600 text-lg'/>}</div>
+        <div className='absolute top-3 right-3 bg-white rounded-full p-1 shadow'>{data.foodType=="veg"?<FaLeaf className='text-green-600 text-lg'/>:<FaDrumstickBite className='text-red-900 text-lg'/>}</div>
 
 
 <img src={data.image} alt="" className='w-full h-full object-cover transition-transform duration-300 hover:scale-105'/>
@@ -73,7 +73,7 @@ const newQty=quantity-1
 <button className='px-2 py-1 hover:bg-gray-100 transition' onClick={handleIncrease}>
 <FaPlus size={12}/>
 </button>
-<button className={`${cartItems.some(i=>i.id==data._id)?"bg-gray-800":"bg-[#ff4d2d]"} text-white px-3 py-2 transition-colors`}  onClick={()=>{
+<button className={`${cartItems.some(i=>i.id==data._id)?"bg-gray-800":"bg-[#722F37]"} text-white px-3 py-2 transition-colors`}  onClick={()=>{
     quantity>0?dispatch(addToCart({
           id:data._id,
           name:data.name,

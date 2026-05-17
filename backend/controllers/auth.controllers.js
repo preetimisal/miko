@@ -78,13 +78,14 @@ return res.status(200).json({message:"log out successfully"})
 }
 
 export const sendOtp=async (req,res) => {
+    console.log("sendOtp API called");
   try {
     const {email}=req.body
     const user=await User.findOne({email})
     if(!user){
        return res.status(400).json({message:"User does not exist."})
     }
-    const otp=Math.floor(1000 + Math.random() * 9000).toString()
+    const  otp=Math.floor(1000 + Math.random() * 9000).toString()
     user.resetOtp=otp
     user.otpExpires=Date.now()+5*60*1000
     user.isOtpVerified=false
@@ -92,6 +93,7 @@ export const sendOtp=async (req,res) => {
     await sendOtpMail(email,otp)
     return res.status(200).json({message:"otp sent successfully"})
   } catch (error) {
+    console.log("Full ERROR:",error);
      return res.status(500).json(`send otp error ${error}`)
   }  
 }

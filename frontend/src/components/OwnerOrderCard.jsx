@@ -48,10 +48,10 @@ const dispatch=useDispatch()
             </div>
 
 <div className='flex justify-between items-center mt-auto pt-3 border-t border-gray-100'>
-<span className='text-sm'>status: <span className='font-semibold capitalize text-[#ff4d2d]'>{data.shopOrders.status}</span>
+<span className='text-sm'>status: <span className='font-semibold capitalize text-[#722F37]'>{data.shopOrders.status}</span>
 </span>
 
-<select  className='rounded-md border px-3 py-1 text-sm focus:outline-none focus:ring-2 border-[#ff4d2d] text-[#ff4d2d]' onChange={(e)=>handleUpdateStatus(data._id,data.shopOrders.shop._id,e.target.value)}>
+<select  className='rounded-md border px-3 py-1 text-sm focus:outline-none focus:ring-2 border-[#722F37] text-[#722F37]' onChange={(e)=>handleUpdateStatus(data._id,data.shopOrders.shop._id,e.target.value)}>
     <option value="">Change</option>
 <option value="pending">Pending</option>
 <option value="preparing">Preparing</option>

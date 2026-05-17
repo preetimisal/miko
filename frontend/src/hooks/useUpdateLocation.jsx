@@ -6,7 +6,7 @@ import {  setCurrentAddress, setCurrentCity, setCurrentState, setUserData } from
 import { setAddress, setLocation } from '../redux/mapSlice'
 
 function useUpdateLocation() {
-    const dispatch=useDispatch()
+    const dispatch=useDispatch() 
     const {userData}=useSelector(state=>state.user)
  
     useEffect(()=>{

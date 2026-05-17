@@ -100,7 +100,7 @@ setRightButton(element.scrollLeft+element.clientWidth<element.scrollWidth)
 
         <h1 className='text-gray-800 text-2xl sm:text-3xl'>Inspiration for your first order</h1>
         <div className='w-full relative'>
-          {showLeftCateButton &&  <button className='absolute left-0 top-1/2 -translate-y-1/2 bg-[#ff4d2d] text-white p-2 rounded-full shadow-lg hover:bg-[#e64528] z-10' onClick={()=>scrollHandler(cateScrollRef,"left")}><FaCircleChevronLeft />
+          {showLeftCateButton &&  <button className='absolute left-0 top-1/2 -translate-y-1/2 bg-[#722F37] text-white p-2 rounded-full shadow-lg hover:bg-[#722F37] z-10' onClick={()=>scrollHandler(cateScrollRef,"left")}><FaCircleChevronLeft />
           </button>}
          
 
@@ -109,7 +109,7 @@ setRightButton(element.scrollLeft+element.clientWidth<element.scrollWidth)
               <CategoryCard name={cate.category} image={cate.image} key={index} onClick={()=>handleFilterByCategory(cate.category)}/>
             ))}
           </div>
-          {showRightCateButton &&  <button className='absolute right-0 top-1/2 -translate-y-1/2 bg-[#ff4d2d] text-white p-2 rounded-full shadow-lg hover:bg-[#e64528] z-10' onClick={()=>scrollHandler(cateScrollRef,"right")}>
+          {showRightCateButton &&  <button className='absolute right-0 top-1/2 -translate-y-1/2 bg-[#722F37] text-white p-2 rounded-full shadow-lg hover:bg-[#722F37] z-10' onClick={()=>scrollHandler(cateScrollRef,"right")}>
 <FaCircleChevronRight />
           </button>}
          
@@ -119,7 +119,7 @@ setRightButton(element.scrollLeft+element.clientWidth<element.scrollWidth)
       <div className='w-full max-w-6xl flex flex-col gap-5 items-start p-[10px]'>
  <h1 className='text-gray-800 text-2xl sm:text-3xl'>Best Shop in {currentCity}</h1>
  <div className='w-full relative'>
-          {showLeftShopButton &&  <button className='absolute left-0 top-1/2 -translate-y-1/2 bg-[#ff4d2d] text-white p-2 rounded-full shadow-lg hover:bg-[#e64528] z-10' onClick={()=>scrollHandler(shopScrollRef,"left")}><FaCircleChevronLeft />
+          {showLeftShopButton &&  <button className='absolute left-0 top-1/2 -translate-y-1/2 bg-[#722F37] text-white p-2 rounded-full shadow-lg hover:bg-[#722F37] z-10' onClick={()=>scrollHandler(shopScrollRef,"left")}><FaCircleChevronLeft />
           </button>}
          
 
@@ -128,7 +128,7 @@ setRightButton(element.scrollLeft+element.clientWidth<element.scrollWidth)
               <CategoryCard name={shop.name} image={shop.image} key={index} onClick={()=>navigate(`/shop/${shop._id}`)}/>
             ))}
           </div>
-          {showRightShopButton &&  <button className='absolute right-0 top-1/2 -translate-y-1/2 bg-[#ff4d2d] text-white p-2 rounded-full shadow-lg hover:bg-[#e64528] z-10' onClick={()=>scrollHandler(shopScrollRef,"right")}>
+          {showRightShopButton &&  <button className='absolute right-0 top-1/2 -translate-y-1/2 bg-[#722F37] text-white p-2 rounded-full shadow-lg hover:bg-[#722F37] z-10' onClick={()=>scrollHandler(shopScrollRef,"right")}>
 <FaCircleChevronRight />
           </button>}
          

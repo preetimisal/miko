@@ -12,7 +12,7 @@ import { ClipLoader } from "react-spinners"
 import { useDispatch } from 'react-redux';
 import { setUserData } from '../redux/userSlice';
 function SignUp() {
-    const primaryColor = "#ff4d2d";
+    const primaryColor = "#722F37";
     const hoverColor = "#e64323";
     const bgColor = "#fff9f6";
     const borderColor = "#ddd";
@@ -64,7 +64,7 @@ function SignUp() {
             <div className={`bg-white rounded-xl shadow-lg w-full max-w-md p-8 border-[1px] `} style={{
                 border: `1px solid ${borderColor}`
             }}>
-                <h1 className={`text-3xl font-bold mb-2 `} style={{ color: primaryColor }}>Vingo</h1>
+                <h1 className={`text-3xl font-bold mb-2 `} style={{ color: primaryColor }}>Miko</h1>
                 <p className='text-gray-600 mb-8'> Create your account to get started with delicious food deliveries
                 </p>
 
@@ -116,18 +116,18 @@ function SignUp() {
                     </div>
                 </div>
 
-            <button className={`w-full font-semibold py-2 rounded-lg transition duration-200 bg-[#ff4d2d] text-white hover:bg-[#e64323] cursor-pointer`} onClick={handleSignUp} disabled={loading}>
+            <button className={`w-full font-semibold py-2 rounded-lg transition duration-200 bg-[#722F37] text-white hover:bg-[#722F37] cursor-pointer`} onClick={handleSignUp} disabled={loading}>
                 {loading?<ClipLoader size={20} color='white'/>:"Sign Up"}
             
             </button>
-            {err && <p className='text-red-500 text-center my-[10px]'>*{err}</p>}
+            {err && <p className='text-[#722F7] text-center my-[10px]'>*{err}</p>}
             
 
             <button className='w-full mt-4 flex items-center justify-center gap-2 border rounded-lg px-4 py-2 transition cursor-pointer duration-200 border-gray-400 hover:bg-gray-100' onClick={handleGoogleAuth}>
 <FcGoogle size={20}/>
 <span>Sign up with Google</span>
             </button>
-            <p className='text-center mt-6 cursor-pointer' onClick={()=>navigate("/signin")}>Already have an account ?  <span className='text-[#ff4d2d]'>Sign In</span></p>
+            <p className='text-center mt-6 cursor-pointer' onClick={()=>navigate("/signin")}>Already have an account ?  <span className='text-[#722F37]'>Sign In</span></p>
             </div>
         </div>
     )
